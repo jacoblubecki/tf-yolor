@@ -1,9 +1,13 @@
 # tf-yolor
 An attempt at implementing YoloR in TensorFlow
 
+## Original YOLOR Repo
+
+https://github.com/WongKinYiu/yolor
+
 ## About This Branch
 
-This branch just contains the kaggle notebook(s) that were used to develop thisframework.
+This branch just contains the kaggle notebook(s) that were used to develop this framework.
 
 ## How did it score?
 
