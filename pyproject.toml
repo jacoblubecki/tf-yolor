@@ -1,0 +1,8 @@
+[build-system]
+requires = [
+    "tensorflow>=2.8.0",
+    "tensorflow-addons>=0.16.1",
+    "sphinx>=4.0.0",
+    "sphinx-rtd-theme>=1.0.0"
+]
+build-backend = "setuptools.build_meta"
