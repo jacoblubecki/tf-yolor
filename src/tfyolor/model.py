@@ -85,7 +85,7 @@ class YolorNeckP6(L.Layer):
     - FPN (x3): Feature Pyramid Network
         - `FPN arXiv Paper <https://arxiv.org/abs/1612.03144>`_
     - PAN (x3): Path Aggregation Network
-        - <PAN arXiv Paper <https://arxiv.org/abs/1803.01534>`_
+        - `PAN arXiv Paper <https://arxiv.org/abs/1803.01534>`_
 
     :param int alpha: Number of output channels for the CSPSPP section.
     :param fpn_channels: The number of output channels for each FPN.
@@ -445,6 +445,8 @@ class YolorHeadP6(L.Layer):
 class YolorP6(keras.Model):
     """ An implementation of the YOLOR-P6 model.
 
+    Original Model: `yolor_p6.cfg`_
+
     Configs should contain exactly the following fields and tuple shapes. The
     values may all be adjusted to increase or decrease the size of the
     resulting network.
@@ -479,6 +481,9 @@ class YolorP6(keras.Model):
     :type anchors: list, tuple
     :param dict config: See above for default schema. Pass `None` to use the
         default configuration.
+
+    .. _yolor_p6.cfg: https://github.com/WongKinYiu/yolor/blob/
+        b168a4dd0fe22068bb6f43724e22013705413afb/cfg/yolor_p6.cfg
     """
 
     def __init__(
